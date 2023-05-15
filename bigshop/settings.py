@@ -143,3 +143,7 @@ STATIC_URL = '/static/'
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+# https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/196e74d3dd5849cd801d319d7095c3eb/
+# https://github.com/Code-Institute-Solutions/boutique_ado_v1/blob/0156647db2f3b02ab9e9c3f09bc81fe82dfe9231/home/views.py
+# https://tailwindcss.com/docs/installation
