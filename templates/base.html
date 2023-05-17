@@ -31,15 +31,23 @@
     
     {% block extra_js %}
     {% endblock %}
-    
+    <style>
+        body {
+        background: url('/media/shop.main.photo.jpg') no-repeat center center fixed;
+        background-size: cover;
+        height: calc(100vh - 164px);
+        color: #555;
+        }
+    </style>
     <title>{% block title %}{% endblock %} | Fancy Shop</title>
     </head>
     <body>
+        
     <header class="container-fluid fixed-top"></header>
         <div id="topnav" class="row bg-white pt-lg-2 d-none d-lg-flex">
             </div>
             <div class="row bg-white">
-                
+
             </div>
             
             <div class="col-12 col-lg-4 my-auto py-1 py-lg-0">
