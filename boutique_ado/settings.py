@@ -11,6 +11,8 @@ https://docs.djangoproject.com/en/3.0/ref/settings/
 """
 
 import os
+if os.path.isfile('env.py'):
+    import env
 import dj_database_url
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
@@ -24,7 +26,7 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
 # SECURITY WARNING: keep the secret key used in production secret!
 SECRET_KEY = os.environ.get(
-    'SECRET_KEY', 'sk_test_51N9V1tBF5zOyFcJlBUMAtd7VLy5sKORKUa4XwnNpa4ZWAVrdixyYFGI4INkufX3daLVA0JAZLwXGxfv9qtO2zVSK00wXwlZYrQ')
+    'SECRET_KEY', '867jhgfd51N9V1tBF5zOyFcJlBjZWAVrdixyYFGI4INkufX3daLVA0JAZLwXGxfv9qtO2zVSK00wXwlZYrQ')
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = 'DEVELOPMENT' in os.environ
@@ -50,6 +52,7 @@ INSTALLED_APPS = [
     'bag',
     'checkout',
     'profiles',
+    
 
     # Other
     'crispy_forms',
@@ -125,6 +128,7 @@ if 'DATABASE_URL' in os.environ:
     DATABASES = {
         'default': dj_database_url.parse(os.environ.get('DATABASE_URL'))
     }
+    print("Connected to Elephant SQL")
 else:
     DATABASES = {
         'default': {
@@ -132,6 +136,7 @@ else:
             'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
         }
     }
+    print("Connected to MySQL")
 
 
 # Password validation
