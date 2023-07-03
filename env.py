@@ -8,7 +8,7 @@ os.environ["STRIPE_SECRET_KEY"] = "sk_test_51N9V1tBF5zOyFcJlBUMAtd7VLy5sKORKUa4X
 
 os.environ["STRIPE_WH_SECRET"] = "whsec_v1IvKr29IFxWn1zM1yEO8H5IyRgWlMfz"
 
-os.environ["DATABASE_URL"] = "postgres://zfccqbnk:WRrZzSgtoHLvSkz35-DRniQceZ0zJd-5@mel.db.elephantsql.com/zfccqbnk"
+os.environ["DATABASE_URL"] = "postgres://kzpprqfi:s5ydi5P6J-ehCSe6voUlHKg8jVgPIsf7@horton.db.elephantsql.com/kzpprqfi"
 
 DEFAULT_AUTO_FIELD = 'django.db.models.AutoField'
 
